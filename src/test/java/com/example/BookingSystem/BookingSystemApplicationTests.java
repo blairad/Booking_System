@@ -1,6 +1,7 @@
 package com.example.BookingSystem;
 
 import com.example.BookingSystem.repositories.CourseRepository.CourseRepository;
+import com.example.BookingSystem.repositories.CustomerRepository.CustomerRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,10 @@ public class BookingSystemApplicationTests {
 
 	@Autowired
 	CourseRepository courseRepository;
+
+	@Autowired
+	CustomerRepository customerRepository;
+
 
 	@Test
 	public void contextLoads() {
