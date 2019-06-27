@@ -1,6 +1,7 @@
 package com.example.BookingSystem.models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -26,6 +27,7 @@ public class Course {
 
     // mapped by "course" is a banana on either side
 
+    @JsonIgnore
     @OneToMany(mappedBy = "course", fetch = FetchType.LAZY)
     private List<Booking> bookings;
 
