@@ -26,6 +26,7 @@ public class Booking {
         this.date = date;
         this.course = course;
         this.customer = customer;
+        //this is where the bananas in mapped by link to
     }
 
     public Booking() {
